@@ -1,13 +1,13 @@
 .nav-side-menu {
   overflow: auto;
-  font-family: verdana;
+  font-family: Arial;
   font-size: 12px;
   font-weight: 200;
   background-color: #2e353d;
   position: fixed;
   top: 0px;
-  width: 260px;
   height: 100%;
+  width: 260px;
   color: #e1ffff;
 }
 .nav-side-menu .brand {
@@ -141,20 +141,32 @@
 }
 
 .custom-carousel {
-  border: 1px solid gray;
-  border-radius: 10px;
-  perspective: 1px;
+  border: 1px solid #2e353d
 }
 
 .custom-container {
+  padding: 0;
+  margin: 0;
+}
+
+.new-row {
   padding-top: 40px;
 }
 
 body {
   margin: 0px;
   padding: 0px;
+  font-size: 14px;
+  font-family: Arial;
+  color: #2e353d;
 }
 
-h3 {
-  padding: 30px;
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+.nav-side-wrapper {
+  width: 100%;
 }
