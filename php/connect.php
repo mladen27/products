@@ -12,4 +12,6 @@ if(!$link){
 	die($conn_error);
 }
 
+mysqli_query ($link, "SET NAMES 'utf8' COLLATE 'utf8_unicode_ci'");
+
 ?>
