@@ -8,7 +8,7 @@ body {
 	margin: 0 0 0px 0;
 	padding: 0;
 	color: #76797c;
-	font-size: medium;
+	font-size: 20px;
 	font-style: normal;
 	font-weight: normal;
 	overflow-x: hidden;
@@ -20,6 +20,7 @@ body {
 }
 
 .navbar.navbar-custom {
+  min-height: 60px;
   color: #fff;
   position: fixed;
   top: 0;
@@ -63,14 +64,12 @@ caption {
 }
 
 .slide1{
-  height: 600px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .slide2{
-  height: 500px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -177,7 +176,7 @@ table.info td {
 
 @media (min-width: 1300px) {
   .container {
-    max-width: 2000px !important;
+    max-width: 3000px !important;
   }
 }
 
@@ -360,7 +359,7 @@ hr {
 
 .spacer {
   width: 100%;
-  min-height: 50px;
+  min-height: 60px;
   margin-bottom: 0px;
 }
 
@@ -417,16 +416,21 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 .panel-inline {
-  width: 300px;
   display: inline-block;
-  margin: 10px;
+  min-width: 20%;
+  max-width: 25%;
+  margin: 35px;
 }
 
 .product-table {
-  position: relative;
-  display: table;
-  width: 100%%;
+  width: 75%;
   margin: 0 auto;
-  border-collapse: separate;
-  border-spacing: 10px;
+}
+
+.custom-carousel {
+  width: 100%;
+}
+
+.max-height {
+  height: 100%;
 }

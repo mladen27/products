@@ -28,11 +28,11 @@
                         <div class="page-content-header">
                             <h1>O Nama<span class="label label-info"></span></h1>
                         </div>
-                        <p>Preduzeće GODEX doo se nalazi u Sremskoj Mitrovici. Osnovano je 2002. godine i bavi se trgovinom na veliko i malo profesionalnih instrumenata za šumarstvo. U tradiciji dugoj 15 godina, pored snabdevanja preduzeća za šumarstvo i naučnih institucija najsavremenijim instrumentima za šumarstvo, preduzeće pruža i konsultantske usluge.</p>
-                        <p>GODEX je uvoznik najpoznatijih proizvoda za šumarstvo švedske firme  <a href="http://www.haglofsweden.com/index.php/en/" target="_blank">HAGLOF SWEDEN AB</a> tokom dugogodišnje saradnje, stalnim prezentacijama šumarskim stručnjacima i obukama za studente, donosio je na područje Srbije najnovija dostignuća iz oblasti šumarstva.</p>
-                        <p>U ponudi se takođe nalaze i šumske krede za obeležavanje i držači krede nemačke firme Bleispitz. </p>
+                        <p>Preduzeće GODEX doo se nalazi u Sremskoj Mitrovici. Osnovano je 2002. godine i bavi se trgovinom na veliko i malo profesionalnih instrumenata za šumarstvo. U tradiciji dugoj 15 godina, pored snabdevanja preduzeća za šumarstvo i naučnih institucija najsavremenijim instrumentima za šumarstvo, preduzeće pruža i konsultantske usluge.</p><br>
+                        <p>GODEX je uvoznik najpoznatijih proizvoda za šumarstvo švedske firme  <a href="http://www.haglofsweden.com/index.php/en/" target="_blank">HAGLOF SWEDEN AB</a> tokom dugogodišnje saradnje, stalnim prezentacijama šumarskim stručnjacima i obukama za studente, donosio je na područje Srbije najnovija dostignuća iz oblasti šumarstva.</p><br>
+                        <p>U ponudi se takođe nalaze i šumske krede za obeležavanje i držači krede nemačke firme Bleispitz. </p><br>
                         <p>Svi proizvodi su obezbedjeni tehničkom podrškom, detaljnim uputstvima na srpskom jeziku, kao i jednogodišnjom garancijom.</p>
-                        <p>Pratite ponudu firme Godex i budite u toku!</p>
+                        <p><strong>Pratite ponudu firme Godex i budite u toku!</strong></p>
                     </div>
                 </div>
             </div>

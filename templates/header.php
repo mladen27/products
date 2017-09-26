@@ -12,12 +12,12 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 	  		</button>
-	  		<a class="navbar-brand" href="/Website/index.php"><img src = "/Website/img/Logo/logo-navbar.png" style = "width:40px; height: 40px" /></a>
+	  		<a class="navbar-brand" href="/Website/index.php"><img src = "/Website/img/Logo/logo-navbar.png" style = "height: 100%" /></a>
 		</div>
 
 
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
+			<ul class="nav navbar-nav max-height">
 				<li class="active"><a href="/Website/index.php">Početna<span class="sr-only">(current)</span></a></li>
 				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/Website/pages/products.php">Proizvodi<span class="caret"></span></a>
 			        <ul class="dropdown-menu">

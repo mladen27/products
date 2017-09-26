@@ -64,6 +64,8 @@
 		<div class="spacer">
             &nbsp;
         </div>
+        <div style="text-align: center;"><h1>Kontaktirajte Nas</h1></div>
+        <hr>
 		<div class="container body-container">
 			<div class = "row">
 				<div class = "col-lg-5 col-lg-offset-1">
@@ -101,7 +103,7 @@
 						<button type="submit" class="btn btn-primary">Pošalji</button>
 					</form>
 				</div>
-				<div class="col-md-3 col-lg-offset-2">
+				<div class="col-md-4 col-lg-offset-1">
 					<form>
 						<legend><span class="glyphicon glyphicon-globe"></span> Kontakt Informacije</legend>
 						

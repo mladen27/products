@@ -16,10 +16,7 @@
         <div class="spacer">
             &nbsp;
         </div>
-            <div class="container body-container centered">
-                <div class="row new-row">
-                    <div class="col-lg-10 col-lg-offset-1">
-                        <div product-table>
+                        <div class="product-table">
                             <?php
                                 if(isset($_GET['group'])){
                                     require_once '..\php\connect.php';
@@ -61,9 +58,6 @@
                                 }
                             ?>
                         </div>
-                    </div>
-                </div>
-            </div>
 
         <?php require_once("../templates/footer.php"); ?>
 
