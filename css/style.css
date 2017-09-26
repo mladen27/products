@@ -1,12 +1,11 @@
 
 html {
     position: relative;
-    min-height: 100%;
 }
 
 body {
-	min-height: 2335px;
-	margin: 0 0 40px 0;
+  min-height: 100vh;
+	margin: 0 0 0px 0;
 	padding: 0;
 	color: #76797c;
 	font-size: medium;
@@ -21,6 +20,7 @@ body {
 }
 
 .navbar.navbar-custom {
+  color: #fff;
   position: fixed;
   top: 0;
   width: 100%;
@@ -39,6 +39,7 @@ body {
 	/*background-color: #315ea5;
   color: #fff;*/
 	text-align: center;
+  z-index:7;
 }
 
 caption { 
@@ -77,13 +78,13 @@ caption {
 
 .carousel-caption h1{
 	font-size: 5.4em;
-	padding-bottom: .4em;
-	color: #cccccc;
-	text-shadow: 2px 2px #000000;
+	padding-bottom: .2em;
+	color: #006AA7;
+	text-shadow: 1px 1px #000000;
 }
 .carousel-caption p{
 	text-shadow: 2px 2px #000000;
-	color: #cccccc;
+	color: #FECC00;
 	font-size: 2em;
 }
 
@@ -115,15 +116,14 @@ table.info td {
 /* Novo */
 
 #wrapper {
-  display: table;
+  display: flex;
   padding-left: 250px;
   transition: all 0.4s ease 0s;
   height: 100%;
 }
 
 #sidebar-wrapper {
-  display: table-cell;
-  min-height: 2200px;
+  flex: 1;
   margin-left: -250px;
   left: 250px;
   width: 250px;
@@ -132,10 +132,11 @@ table.info td {
   height: 100%;
   overflow-y: auto;
   transition: all 0.4s ease 0s;
+  z-index: 5;
 }
 
 #page-content-wrapper {
-  display: table-cell;
+  flex: 3;
   width: 100%;
 }
 
@@ -187,7 +188,7 @@ table.info td {
   background-color: #f8f8f8;
   border-color: #e7e7e7;
   height: 100%;
-  color: #777;
+  color: #006AA7;
 }
 
 .nav-side-menu .toggle-btn {
@@ -195,7 +196,7 @@ table.info td {
 }
 .nav-side-menu ul,
 .nav-side-menu li {
-  color: #777;
+  color: #006AA7;
   list-style: none;
   padding: 0px;
   margin: 0px;
@@ -237,11 +238,11 @@ table.info td {
 }
 .nav-side-menu ul .sub-menu li.active a,
 .nav-side-menu li .sub-menu li.active a {
-  color: #777;
+  color: #fff;
 }
 .nav-side-menu ul .sub-menu li,
 .nav-side-menu li .sub-menu li {
-  background-color: #181c20;
+  background-color: #006AA7;
   border: none;
   line-height: 28px;
   border-bottom: 1px solid #23282e;
@@ -249,7 +250,7 @@ table.info td {
 }
 .nav-side-menu ul .sub-menu li:hover,
 .nav-side-menu li .sub-menu li:hover {
-  background-color: #020203;
+  background-color: #006AA7;
 }
 .nav-side-menu ul .sub-menu li:before,
 .nav-side-menu li .sub-menu li:before {
@@ -259,17 +260,17 @@ table.info td {
   padding-left: 10px;
   padding-right: 10px;
   vertical-align: middle;
-  color: #777;
+  color: #fff;
 }
 .nav-side-menu li {
   padding-left: 0px;
   border-left: 3px solid #2e353d;
   border-bottom: 1px solid #23282e;
-  color: #777;
+  color: #fff;
 }
 .nav-side-menu li a {
   text-decoration: none;
-  color: #777;
+  color: #fff;
 }
 .nav-side-menu li a i {
   padding-left: 10px;
@@ -329,7 +330,7 @@ h1 {
   font-weight: bold;
   color: #75726d;
 
-  color: #315ea5;
+  color: #006AA7;
 }
 
 .product-category {
@@ -349,7 +350,7 @@ hr {
 	display:block;
 	width: 100%;              
 	height: 1px;
-	margin-right: 50px;
+	margin-right: 30px;
 }
 
 .page-content li {
@@ -404,4 +405,28 @@ td {
 }
 li.dropdown:hover > .dropdown-menu {
     display: block;
+}
+
+.form-error-message {
+  font-color: red;
+}
+
+.navbar-align-vert {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.panel-inline {
+  width: 300px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.product-table {
+  position: relative;
+  display: table;
+  width: 100%%;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 10px;
 }

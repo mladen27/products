@@ -37,7 +37,7 @@
         </div>
         <div id="wrapper">
             <div id="sidebar-wrapper">
-
+                <?php require_once '../templates/sidebar.php'; ?>
             </div>
             <div id="page-content-wrapper">
                 <div id="page-content" class="page-content">

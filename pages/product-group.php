@@ -16,34 +16,43 @@
         <div class="spacer">
             &nbsp;
         </div>
-        <div id="wrapper">
-            <div id="sidebar-wrapper">
-
-            </div>
-            <div id="page-content-wrapper">
-                <div id="page-content" class="page-content">
-                    <div class="container custom-container">
-
-                        <div class="row new-row">
+            <div class="container body-container centered">
+                <div class="row new-row">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <div product-table>
                             <?php
                                 if(isset($_GET['group'])){
                                     require_once '..\php\connect.php';
                                     $group = $_GET['group'];
 
-                                    $query = "SELECT p.id as pId, p.ime, p.kraciopis, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id WHERE k.alias = '".$group."';";
+
+
+
+
+                                    if(isset($_GET['key-word'])){ 
+                                        mysql_query("SELECT * FROM proizvod
+                                            WHERE (`ime` LIKE '%".$_GET['key-word']."%') OR (`kraciopis` LIKE '%".$_GET['key-word']."%')");
+                                    } else {
+                                        if($group == 'all'){
+                                            $query = "SELECT p.id as pId, p.ime, p.kraciopis, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id;";
+                                        } else {
+                                            $query = "SELECT p.id as pId, p.ime, p.kraciopis, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id WHERE k.alias = '".$group."';";
+                                        }
+                                    }
 
                                     if($query_run = mysqli_query($link, $query)){
-                                        echo "<table border=1 frame=void rules=rows style = 'width: 100%'>";
+                                        //echo "<table border=1 frame=void rules=rows style = 'width: 100%'>";
                                         while($row = mysqli_fetch_assoc($query_run)){
-                                            echo "<tr>";
+                                            echo "<div class='panel panel-default panel-inline'>";
 
-                                            echo "<td style = 'width: 15%'><img src='/Website/img/products/".$row['alias']."/".$row['pId']."/default.jpg' style='width: 100%;'></td>";
-                                            echo "<td style = 'width: 85%; padding-left: 20px'><span class='product-title'><a href='/Website/pages/product.php?product=".$row['pId']."'>".$row['ime']."</a></span> <br> <span class='product-desc'>".$row['kraciopis']."</span></td>";
 
-                                            echo "</tr>";
+                                            echo "<div class='panel-heading'><a href='/Website/pages/product.php?product=".$row['pId']."'>".$row['ime']."</a></div>";
+                                            echo "<div class='panel-body'><img style='width: 100%' src='/Website/img/products/".$row['alias']."/".$row['pId']."/default.jpg' style='width: 100%;'></div>";
+
+                                            echo "</div>";
                                         }
 
-                                        echo "</table>";
+                                        //echo "</table>";
                                     } else {
                                         echo mysqli_error($link);
                                     }
@@ -55,7 +64,6 @@
                     </div>
                 </div>
             </div>
-        </div>
 
         <?php require_once("../templates/footer.php"); ?>
 

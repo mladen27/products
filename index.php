@@ -33,9 +33,9 @@
 									<img src = "img/headers/header.jpg" style = "width: 100%; height: 100%;"/>
 								</div>
 								<div class="carousel-caption">
-								  <h1>Amazing Backgrounds</h1>
-								  <p>Thousands of Backgrounds for Free</p>
-								  <p><a href="#" class="btn btn-primary btn-sm">Get them Now</a></p>
+								  <h1>GODEX</h1>
+								  <p> PROFESIONALNA OPREMA ZA ŠUMARSTVO</p>
+								  <p><a href="#" class="btn btn-primary btn-sm">Pogledajte Proizvode</a></p>
 								</div>
 							</div>		
 							<a class="left carousel-control" href="#theCarousel" data-slide="prev">
