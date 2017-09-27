@@ -8,6 +8,7 @@
         if($query_run = mysqli_query($link, $query)){
             if($row = mysqli_fetch_assoc($query_run)){
 
+                echo "<script type='text/javascript'>alert(".$row['ime'].");</script>";
             }
         } else {
             echo mysqli_error($link);

@@ -5,7 +5,7 @@
 		<script src = "../js/bootstrap.min.js"></script>
 		<meta charset = "utf-8">
 		<meta http-equiv="X-UA-Compatible" content = "IE = edge">
-		<title>Contact page</title>
+		<title>Kontakt</title>
 		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -64,7 +64,7 @@
 		<div class="spacer">
             &nbsp;
         </div>
-        <div style="text-align: center;"><h1>Kontaktirajte Nas</h1></div>
+        <div style="text-align: center;"><h1>Kontaktirajte nas</h1></div>
         <hr>
 		<div class="container body-container">
 			<div class = "row">

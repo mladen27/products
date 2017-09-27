@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  min-height: 100vh;
+  min-height: 1050px;
 	margin: 0 0 0px 0;
 	padding: 0;
 	color: #76797c;
@@ -417,13 +417,12 @@ li.dropdown:hover > .dropdown-menu {
 
 .panel-inline {
   display: inline-block;
-  min-width: 20%;
-  max-width: 25%;
-  margin: 35px;
+  width: 20%;
+  margin: 20px;
 }
 
 .product-table {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
 }
 
