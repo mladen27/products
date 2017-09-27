@@ -1,23 +1,3 @@
-<?php
-    $row = null;
-    if(isset($_GET['product'])){
-        require_once '..\php\connect.php';
-        $id = $_GET['product'];
-        $query = "SELECT p.id as pId, p.ime, p.kraciopis, p.duziopis, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id WHERE p.id = '".$id."';";
-
-        if($query_run = mysqli_query($link, $query)){
-            if($row = mysqli_fetch_assoc($query_run)){
-
-            }
-        } else {
-            echo mysqli_error($link);
-        }
-
-
-    } else {
-    }
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -26,25 +6,32 @@
         <link rel="icon" type="image/png" href="/Website/img/Logo/logo-navbar.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="/Website/img/Logo/logo-navbar.png" sizes="16x16" />
         <link href="https://fonts.googleapis.com/css?family=Oswald" type="text/css" rel="stylesheet">
-        <title></title>
-    </head>
+        <title>Radio Enter Button</title>
     <body>
         <?php
             require_once '../templates/header.php';
         ?>
         <!--<div class="spacer">
             &nbsp;
-        </div>-->
+        </div>-->                    
+        <div class="page-content-header">
+            <div style="text-align: center;"><h1>Radio Enter Button</h1></div>
+        </div><hr>
         <div id="wrapper">
             <div id="sidebar-wrapper">
                 <?php require_once '../templates/sidebar.php'; ?>
             </div>
             <div id="page-content-wrapper">
-                <div id="page-content" class="page-content">
-                    <div class="page-content-header">
-                        <h1><?php echo $row['ime']; ?><span class="label label-info"></span></h1>
-                    </div>
+                <div id="product-content" class="page-content">
+                    <img src="/Website/img/products/radio-button/RadioEnterButton1550x840.png">
 
+                    <p>Potvrđivanje podataka na DP II kompjuterizovanoj prečnici je olakšano sa instaliranim Radio enter dugmerom na Smart skali.</p><br>
+
+                    <p>Ako je na DP II kompjuterizovanoj prečnici instalirano Radio enter dugme, smart skala prečnice se može koristiti odvojeno od DP II terminala. Prečnici se potvrđuju ovim dugmetom na smart skali, a rezultati premera će biti memorisani na DP II terminalu, koji se može nalaziti i u vašem džepu.</p><br>
+
+                    <img src ="/Website/img/products/radio-button/RadioEnterButtonDPII550x840.jpg"><br>
+
+                    <p>Rad sa DP II kompjuterizovanom prečnicom i Radio enter dugmetom će biti mnogo komforniji na terenu.</p>
                 </div>
             </div>
         </div>

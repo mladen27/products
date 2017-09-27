@@ -13,9 +13,25 @@
         <?php
             require_once '../templates/header.php'; 
         ?>
-        <div class="spacer">
+        <!--<div class="spacer">
             &nbsp;
-        </div>
+        </div>-->
+                <div id="theCarousel" class="carousel slide custom-carousel" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#theCarousel" data-slide-to="0" class="active"> </li >
+                            <li data-target="#theCarousel" data-slide-to="1"> </li>
+                            <li data-target ="#theCarousel" data-slide-to="2"> </li>
+                        </ol >
+
+                        <div class="carousel-inner">
+                            <div class="item active" >
+                                <div class ="slide1">
+                                    <img src = "/Website/img/header2.jpg" style = "width: 100%; height: 100%;"/>
+                                </div>
+                            </div>      
+                        </div>
+                    </div>
+                    <div style="text-align: center;"><h1>Proizvodi</h1></div><hr>
                         <div class="product-table">
                             <?php
                                 if(isset($_GET['group'])){
@@ -31,9 +47,9 @@
                                             WHERE (`ime` LIKE '%".$_GET['key-word']."%') OR (`kraciopis` LIKE '%".$_GET['key-word']."%')");
                                     } else {
                                         if($group == 'all'){
-                                            $query = "SELECT p.id as pId, p.ime, p.kraciopis, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id;";
+                                            $query = "SELECT p.id as pId, p.ime, p.kraciopis, p.palias, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id;";
                                         } else {
-                                            $query = "SELECT p.id as pId, p.ime, p.kraciopis, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id WHERE k.alias = '".$group."';";
+                                            $query = "SELECT p.id as pId, p.ime, p.kraciopis, p.palias, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id WHERE k.alias = '".$group."';";
                                         }
                                     }
 
@@ -43,7 +59,7 @@
                                             echo "<div class='panel panel-default panel-inline'>";
 
 
-                                            echo "<div class='panel-heading'><a href='/Website/pages/product.php?product=".$row['pId']."'>".$row['ime']."</a></div>";
+                                            echo "<div class='panel-heading'><a href='/Website/pages/".$row['palias'].".php'>".$row['ime']."</a></div>";
                                             echo "<div class='panel-body'><img style='width: 100%' src='/Website/img/products/".$row['alias']."/".$row['pId']."/default.jpg' style='width: 100%;'></div>";
 
                                             echo "</div>";

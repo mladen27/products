@@ -13,9 +13,9 @@
 
 	<body>
 		<?php require_once 'templates/header.php' ?>
-		<div class="spacer">
+        <!--<div class="spacer">
             &nbsp;
-        </div>
+        </div>-->
 		
 		<div class = "container fit-container">
 			<div class = "row">
@@ -34,8 +34,8 @@
 								</div>
 								<div class="carousel-caption">
 								  <h1>GODEX</h1>
-								  <p> PROFESIONALNA OPREMA ZA ŠUMARSTVO</p>
-								  <p><a href="#" class="btn btn-primary btn-sm">Pogledajte Proizvode</a></p>
+								  <h2> PROFESIONALNA OPREMA ZA ŠUMARSTVO</h2>
+								  <h2><a href="#" class="btn btn-primary btn-sm">Pogledajte Proizvode</a></h2>
 								</div>
 							</div>		
 							<a class="left carousel-control" href="#theCarousel" data-slide="prev">
@@ -48,6 +48,20 @@
 					</div>
 				</div>
 			</div>
+			<div class ="row">
+				<div class ="col-lg-12">
+					<div class = "home-wrapper">
+						<h1>Aktuelno</h1>
+						<div class="home-item">
+						</div>
+						<div class="home-item">
+						</div>
+						<div class="home-item">
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
 		</div>
 
 		<div class = "footer"> <?php require_once("templates/footer.php"); ?> </div>

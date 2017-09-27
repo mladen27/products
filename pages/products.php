@@ -35,12 +35,12 @@
         <?php
             require_once '../templates/header.php'; 
         ?>
-        <div class="spacer">
+        <!--<div class="spacer">
             &nbsp;
-        </div>
+        </div>-->
         <div id="wrapper">
             <div id="sidebar-wrapper">
-
+                
             </div>
             <div id="page-content-wrapper">
                 <div id="page-content" class="page-content">

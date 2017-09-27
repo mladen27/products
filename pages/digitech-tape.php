@@ -1,23 +1,3 @@
-<?php
-    $row = null;
-    if(isset($_GET['product'])){
-        require_once '..\php\connect.php';
-        $id = $_GET['product'];
-        $query = "SELECT p.id as pId, p.ime, p.kraciopis, p.duziopis, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id WHERE p.id = '".$id."';";
-
-        if($query_run = mysqli_query($link, $query)){
-            if($row = mysqli_fetch_assoc($query_run)){
-
-            }
-        } else {
-            echo mysqli_error($link);
-        }
-
-
-    } else {
-    }
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -26,7 +6,7 @@
         <link rel="icon" type="image/png" href="/Website/img/Logo/logo-navbar.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="/Website/img/Logo/logo-navbar.png" sizes="16x16" />
         <link href="https://fonts.googleapis.com/css?family=Oswald" type="text/css" rel="stylesheet">
-        <title></title>
+        <title>Digitalna Traka</title>
     </head>
     <body>
         <?php
@@ -34,16 +14,28 @@
         ?>
         <!--<div class="spacer">
             &nbsp;
-        </div>-->
+        </div>-->                    
+        <div class="page-content-header">
+            <div style="text-align: center;"><h1>Digitalna Traka</h1></div>
+        </div><hr>
         <div id="wrapper">
             <div id="sidebar-wrapper">
                 <?php require_once '../templates/sidebar.php'; ?>
             </div>
             <div id="page-content-wrapper">
-                <div id="page-content" class="page-content">
-                    <div class="page-content-header">
-                        <h1><?php echo $row['ime']; ?><span class="label label-info"></span></h1>
-                    </div>
+                <div id="product-content" class="page-content">
+                    <img src="/Website/img/products/digitech-tape/DigitechTape1550x840.png">
+
+                    <p>Digitalna traka je dodatak za DP II prečnicu i koristi se za unapređeni premer dužine sortimenata u šumarstvu.</p><br>
+
+                    <p>Digitalna traka je elektronski digitalni merni dodataka za DP II kompjuterizovanu prečnicu. Dužina trupca se meri direktno u kompjuter prečnice i omogućuje operateru na terenu efikasan rad bez potencijalnih grešaka kod premera.</p><br>
+
+                    <p>Digitalna traka ima primenu i kod kalibracije harvesterskih mašina.</p><br>
+
+                    <p>Digitalna traka se može uz odgovarajući program na DP II prečnici koristiti i za premer obima stabla, a zatim preračunavati u prečnik.</p><br>
+
+                    <img src ="/Website/img/products/digitech-tape/DPIIDTT550x840.jpg"><br>
+
 
                 </div>
             </div>

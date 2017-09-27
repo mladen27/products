@@ -12,9 +12,9 @@
         <?php
             require_once '../templates/header.php';
         ?>
-        <div class="spacer">
+        <!--<div class="spacer">
             &nbsp;
-        </div>
+        </div>-->
 
         <div id="page-content" class="page-content">
 
@@ -28,6 +28,7 @@
                         <div class="page-content-header">
                             <h1>O Nama<span class="label label-info"></span></h1>
                         </div>
+                        <hr>
                         <p>Preduzeće GODEX doo se nalazi u Sremskoj Mitrovici. Osnovano je 2002. godine i bavi se trgovinom na veliko i malo profesionalnih instrumenata za šumarstvo. U tradiciji dugoj 15 godina, pored snabdevanja preduzeća za šumarstvo i naučnih institucija najsavremenijim instrumentima za šumarstvo, preduzeće pruža i konsultantske usluge.</p><br>
                         <p>GODEX je uvoznik najpoznatijih proizvoda za šumarstvo švedske firme  <a href="http://www.haglofsweden.com/index.php/en/" target="_blank">HAGLOF SWEDEN AB</a> tokom dugogodišnje saradnje, stalnim prezentacijama šumarskim stručnjacima i obukama za studente, donosio je na područje Srbije najnovija dostignuća iz oblasti šumarstva.</p><br>
                         <p>U ponudi se takođe nalaze i šumske krede za obeležavanje i držači krede nemačke firme Bleispitz. </p><br>

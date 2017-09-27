@@ -1,23 +1,3 @@
-<?php
-    $row = null;
-    if(isset($_GET['product'])){
-        require_once '..\php\connect.php';
-        $id = $_GET['product'];
-        $query = "SELECT p.id as pId, p.ime, p.kraciopis, p.duziopis, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id WHERE p.id = '".$id."';";
-
-        if($query_run = mysqli_query($link, $query)){
-            if($row = mysqli_fetch_assoc($query_run)){
-
-            }
-        } else {
-            echo mysqli_error($link);
-        }
-
-
-    } else {
-    }
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -26,7 +6,7 @@
         <link rel="icon" type="image/png" href="/Website/img/Logo/logo-navbar.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="/Website/img/Logo/logo-navbar.png" sizes="16x16" />
         <link href="https://fonts.googleapis.com/css?family=Oswald" type="text/css" rel="stylesheet">
-        <title></title>
+        <title>Mantax Blue</title>
     </head>
     <body>
         <?php
@@ -34,16 +14,26 @@
         ?>
         <!--<div class="spacer">
             &nbsp;
-        </div>-->
+        </div>-->                    
+        <div class="page-content-header">
+            <div style="text-align: center;"><h1>Mantax Blue</h1></div>
+        </div><hr>
         <div id="wrapper">
             <div id="sidebar-wrapper">
                 <?php require_once '../templates/sidebar.php'; ?>
             </div>
             <div id="page-content-wrapper">
-                <div id="page-content" class="page-content">
-                    <div class="page-content-header">
-                        <h1><?php echo $row['ime']; ?><span class="label label-info"></span></h1>
-                    </div>
+                <div id="product-content" class="page-content">
+                    <img src="/Website/img/products/mantax-blue/MantaxBlue550x840.png">
+
+                    <p>Mantax blue je najpopularnija manuelna prečnica za rad u šumarstvu.</p><br>
+
+                    <p>U odnosu na druge slične proizvode izdvojile su je karakteristike: vrlo lagana, rasklopivi kraci, jenostavno podešavanje kraka i postojana podela na skali.</p><br>
+
+                    <p>Prečnica se izrađuje u različitim dimenzijama i različitim podelama skale.</p><br>
+
+                    <img src ="/Website/img/products/mantax-blue/skaltryck550x840.jpg"><br>
+
 
                 </div>
             </div>

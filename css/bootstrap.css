@@ -4005,7 +4005,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #000;
+  background-color: #eee;
   border-color: #337ab7;
 }
 .nav .nav-divider {
@@ -4502,14 +4502,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-right: 0;
   }
 }
-
-/* NAVBAR DEFAULT */
 .navbar-default {
   background-color: #f8f8f8;
   border-color: #e7e7e7;
 }
-
-/* Logo */
 .navbar-default .navbar-brand {
   color: #777;
 }
@@ -4518,13 +4514,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #5e5e5e;
   background-color: transparent;
 }
-
-/* Text */
 .navbar-default .navbar-text {
   color: #777;
 }
-
-/* Meni itemi */
 .navbar-default .navbar-nav > li > a {
   color: #777;
 }
@@ -4545,8 +4537,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #ccc;
   background-color: transparent;
 }
-
-/* Navbar toggle */
 .navbar-default .navbar-toggle {
   border-color: #ddd;
 }
@@ -4677,7 +4667,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
   color: #fff;
-  background-color: #005c91;
+  background-color: #2e353d;
 }
 
 /* Manji displeji, do 767px */
@@ -5499,7 +5489,6 @@ button.list-group-item-danger.active:focus {
   padding: 0;
 }
 .panel-heading {
-  display: inline-block
   padding: 10px 15px;
   border-bottom: 1px solid transparent;
   border-top-left-radius: 3px;

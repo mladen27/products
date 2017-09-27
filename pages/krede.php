@@ -1,23 +1,3 @@
-<?php
-    $row = null;
-    if(isset($_GET['product'])){
-        require_once '..\php\connect.php';
-        $id = $_GET['product'];
-        $query = "SELECT p.id as pId, p.ime, p.kraciopis, p.duziopis, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id WHERE p.id = '".$id."';";
-
-        if($query_run = mysqli_query($link, $query)){
-            if($row = mysqli_fetch_assoc($query_run)){
-
-            }
-        } else {
-            echo mysqli_error($link);
-        }
-
-
-    } else {
-    }
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -26,7 +6,7 @@
         <link rel="icon" type="image/png" href="/Website/img/Logo/logo-navbar.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="/Website/img/Logo/logo-navbar.png" sizes="16x16" />
         <link href="https://fonts.googleapis.com/css?family=Oswald" type="text/css" rel="stylesheet">
-        <title></title>
+        <title>Krede</title>
     </head>
     <body>
         <?php
@@ -34,16 +14,34 @@
         ?>
         <!--<div class="spacer">
             &nbsp;
-        </div>-->
+        </div>-->                    
+        <div class="page-content-header">
+            <div style="text-align: center;"><h1>Krede</h1></div>
+        </div><hr>
         <div id="wrapper">
             <div id="sidebar-wrapper">
                 <?php require_once '../templates/sidebar.php'; ?>
             </div>
             <div id="page-content-wrapper">
-                <div id="page-content" class="page-content">
-                    <div class="page-content-header">
-                        <h1><?php echo $row['ime']; ?><span class="label label-info"></span></h1>
-                    </div>
+                <div id="product-content" class="page-content">
+                    <img src="/Website/img/products/krede/DP_DME_DPII550x840.png">
+
+                    <p>U ponudi se nalaze visokokvalitetne šumske krede nemačkog proizvođača Bleispitz. Sve krede su testirane i proverene pre isporuke.</p><br>
+
+                    <p>Šumske krede se upotrebljavaju za obeležavanje u šumarstvu, drvnoj industriji, kao i u ostalim delatnostima. Obeležavanje se može vršiti na suvom i mokrom drvetu, papiru, kartonu, metalu, kamenu, betonu, pločicama i plastici.</p><br>
+
+                    <p>Obeležavanje je otporno na brisanje i vremenske uslove.</p><br>
+
+                    <p>Krede su šestougaone, dimenzija: prečnik 12 mm, dužina 120 mm.</p><br>
+
+                    <p>Jedno pakovanje ima 12 kreda.</p><br>
+
+                    <p>U ponudi su crvene, plave i fluoroscentne krede.</p><br>
+
+                    <p>Fluoroscentne krede se upotrebljavaju u preradi drveta, jer su pogodne za optičke čitače u pilanama.</p><br>
+
+                    <img src ="/Website/img/products/krede/DPDME_DPII_2_550x840.jpg"><br>
+
 
                 </div>
             </div>

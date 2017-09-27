@@ -2,7 +2,6 @@
 <?php
     $row = null;
     require_once '..\php\connect.php';
-    $id = $_GET['product'];
     $query = "SELECT p.id as pId, p.ime, p.kraciopis, p.duziopis, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id;";
 
     if($query_run = mysqli_query($link, $query)){
@@ -20,19 +19,15 @@
         <div class="menu-list">
   
             <ul id="menu-content" class="menu-content collapse out">
-                <li class="sidebar-title">
-                  <a href="/Website/pages/products.php"><i class="fa fa-dashboard fa-lg"></i><span class="vert-align">Products</span></a>
-                </li>
 
                 <li  data-toggle="collapse" data-target="#calipers" class="collapsed">
                   <a href="#"><i class="fa fa-gift fa-lg"></i>&nbsp;Prečnice</a>
                 </li>
-                <ul class="sub-menu collapse" id="calipers">
+                <ul class="sub-menu collapse in" id="calipers">
                   <?php
                       $row = null;
                       require_once '..\php\connect.php';
-                      $id = $_GET['product'];
-                      $query = "SELECT p.id as pId, p.ime, p.kraciopis, p.duziopis, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id WHERE k.alias = 'calipers';";
+                      $query = "SELECT p.id as pId, p.ime, p.kraciopis, p.duziopis, p.palias, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id WHERE k.alias = 'calipers';";
 
                       if($query_run = mysqli_query($link, $query)){
                           if($row = mysqli_fetch_assoc($query_run)){
@@ -45,7 +40,7 @@
                       if($query_run = mysqli_query($link, $query)){
                           //echo "<table border=1 frame=void rules=rows style = 'width: 100%'>";
                           while($row = mysqli_fetch_assoc($query_run)){
-                              echo "<li><a href='#'>";
+                              echo "<li><a href='/Website/pages/".$row['palias'].".php'>";
 
 
                               echo $row['ime'];
@@ -64,12 +59,11 @@
                 <li data-toggle="collapse" data-target="#height" class="collapsed">
                   <a href="#"><i class="fa fa-globe fa-lg"></i>&nbsp;Visinomeri</a>
                 </li>  
-                <ul class="sub-menu collapse" id="height">
+                <ul class="sub-menu collapse in" id="height">
                   <?php
                       $row = null;
                       require_once '..\php\connect.php';
-                      $id = $_GET['product'];
-                      $query = "SELECT p.id as pId, p.ime, p.kraciopis, p.duziopis, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id WHERE k.alias = 'height';";
+                      $query = "SELECT p.id as pId, p.ime, p.kraciopis, p.duziopis, p.palias, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id WHERE k.alias = 'height';";
 
                       if($query_run = mysqli_query($link, $query)){
                           if($row = mysqli_fetch_assoc($query_run)){
@@ -82,7 +76,7 @@
                       if($query_run = mysqli_query($link, $query)){
                           //echo "<table border=1 frame=void rules=rows style = 'width: 100%'>";
                           while($row = mysqli_fetch_assoc($query_run)){
-                              echo "<li><a href='#'>";
+                              echo "<li><a href='/Website/pages/".$row['palias'].".php'>";
 
 
                               echo $row['ime'];
@@ -101,12 +95,11 @@
                 <li data-toggle="collapse" data-target="#survey" class="collapsed">
                   <a href="#"><i class="fa fa-car fa-lg"></i>&nbsp;Krede</a>
                 </li>
-                <ul class="sub-menu collapse" id="survey">
+                <ul class="sub-menu collapse in" id="survey">
                   <?php
                       $row = null;
                       require_once '..\php\connect.php';
-                      $id = $_GET['product'];
-                      $query = "SELECT p.id as pId, p.ime, p.kraciopis, p.duziopis, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id WHERE k.alias = 'survey';";
+                      $query = "SELECT p.id as pId, p.ime, p.kraciopis, p.duziopis, p.palias, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id WHERE k.alias = 'survey';";
 
                       if($query_run = mysqli_query($link, $query)){
                           if($row = mysqli_fetch_assoc($query_run)){
@@ -119,7 +112,7 @@
                       if($query_run = mysqli_query($link, $query)){
                           //echo "<table border=1 frame=void rules=rows style = 'width: 100%'>";
                           while($row = mysqli_fetch_assoc($query_run)){
-                              echo "<li><a href='#'>";
+                              echo "<li><a href='/Website/pages/".$row['palias'].".php'>";
 
 
                               echo $row['ime'];
@@ -137,12 +130,11 @@
                 <li data-toggle="collapse" data-target="#chalk" class="collapsed">
                   <a href="#"><i class="fa fa-car fa-lg"></i>&nbsp;Svrdla</a>
                 </li>
-                <ul class="sub-menu collapse" id="chalk">
+                <ul class="sub-menu collapse in" id="chalk">
                   <?php
                       $row = null;
                       require_once '..\php\connect.php';
-                      $id = $_GET['product'];
-                      $query = "SELECT p.id as pId, p.ime, p.kraciopis, p.duziopis, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id WHERE k.alias = 'chalk';";
+                      $query = "SELECT p.id as pId, p.ime, p.kraciopis, p.duziopis, p.palias, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id WHERE k.alias = 'chalk';";
 
                       if($query_run = mysqli_query($link, $query)){
                           if($row = mysqli_fetch_assoc($query_run)){
@@ -155,7 +147,7 @@
                       if($query_run = mysqli_query($link, $query)){
                           //echo "<table border=1 frame=void rules=rows style = 'width: 100%'>";
                           while($row = mysqli_fetch_assoc($query_run)){
-                              echo "<li><a href='#'>";
+                              echo "<li><a href='/Website/pages/".$row['palias'].".php'>";
 
 
                               echo $row['ime'];
