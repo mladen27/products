@@ -24,6 +24,11 @@
             </div>
             <div id="page-content-wrapper">
                 <div id="product-content" class="page-content">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/Website/pages/products.php">Proizvodi</a></li>
+                      <li class="breadcrumb-item"><a href="/Website/pages/product-group.php?group=height">Visinomeri</a></li>
+                      <li class="breadcrumb-item active">Vertex IV</li>
+                    </ol>
                     <img src="/Website/img/products/vertex-iv/VertexIV-T3_550x840.png">
 
                     <p>Vertex IV je najprodavaniji instrument za merenje visina u šumarstvu!</p><br>

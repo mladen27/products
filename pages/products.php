@@ -35,46 +35,38 @@
         <?php
             require_once '../templates/header.php'; 
         ?>
-        <!--<div class="spacer">
-            &nbsp;
-        </div>-->
-        <div id="wrapper">
-            <div id="sidebar-wrapper">
-                
-            </div>
-            <div id="page-content-wrapper">
-                <div id="page-content" class="page-content">
-                    <div class="container custom-container">
 
-                        <div class="row new-row">
-                            <ul>
-                                <li style>
-                                    <h3>Prečnice</h3>
-                                    <p>Manuelne, digitalne i kompjuterizovane prečnice za precizno merenje prečnika u svim vrstama premera u šumarstvu i preradi drveta.</p>
-                                    <a href = "product-group?group=calipers"><img src="/Website/img/precnice.jpg" class="product-category"></a>
-                                </li>
-                                <li>
+            <div class="container body-container">
 
-                                    <h3><br>Visinomeri</h3>
-                                    <p>Različiti modeli instrumenata za merenja visina, rastojanja i uglova u šumarstvu i ostalim terenskim poslovima.</p>
-                                    <a href="product-group?group=height"><img src="/Website/img/visinomeri.jpg" class="product-category"></a>
-                                </li>
-                                <li>
-                                    <h3><br>Krede</h3>
-                                    <p>Krede i držači za krede za obeležavanje stabala i sortimenata u šumarstvu i preradi drveta.</p>
-                                    <a href="product-group?group=chalk"><img src="/Website/img/krede.jpg" class="product-category"></a>
-                                </li>                            
-                                <li>
-                                    <h3><br>Svrdla</h3>
-                                    <p>Priraštajno svrdlo za merenje debljinskog prirasta i kvaliteta drveta - dostupno u različitim dimenzijama.</p>
-                                    <a href="product-group?group=chalk"><img src="/Website/img/ostalo.jpg" class="product-category"></a>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="row new-row">
+                    <div class="col-log-12">
+                        <ul>
+                            <li style>
+                                <h3>Prečnice</h3>
+                                <p>Manuelne, digitalne i kompjuterizovane prečnice za precizno merenje prečnika u svim vrstama premera u šumarstvu i preradi drveta.</p>
+                                <a href = "product-group?group=calipers"><img src="/Website/img/precnice.jpg" class="product-category"></a>
+                            </li>
+                            <li>
+
+                                <h3><br>Visinomeri</h3>
+                                <p>Različiti modeli instrumenata za merenja visina, rastojanja i uglova u šumarstvu i ostalim terenskim poslovima.</p>
+                                <a href="product-group?group=height"><img src="/Website/img/visinomeri.jpg" class="product-category"></a>
+                            </li>
+                            <li>
+                                <h3><br>Krede</h3>
+                                <p>Krede i držači za krede za obeležavanje stabala i sortimenata u šumarstvu i preradi drveta.</p>
+                                <a href="product-group?group=chalk"><img src="/Website/img/krede.jpg" class="product-category"></a>
+                            </li>                            
+                            <li>
+                                <h3><br>Svrdla</h3>
+                                <p>Priraštajno svrdlo za merenje debljinskog prirasta i kvaliteta drveta - dostupno u različitim dimenzijama.</p>
+                                <a href="product-group?group=chalk"><img src="/Website/img/ostalo.jpg" class="product-category"></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
+
 
         <?php require_once("../templates/footer.php"); ?>
 

@@ -24,6 +24,11 @@
             </div>
             <div id="page-content-wrapper">
                 <div id="product-content" class="page-content">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/Website/pages/products.php">Proizvodi</a></li>
+                      <li class="breadcrumb-item"><a href="/Website/pages/product-group.php?group=calipers">Prečnice</a></li>
+                      <li class="breadcrumb-item active">DP DME</li>
+                    </ol>
                     <img src="/Website/img/products/dp-dme/DP_DME_DPII550x840.png">
 
                     <p>DP DME je dodatak za DP II kompjuterizovanu prečnicu.</p><br>

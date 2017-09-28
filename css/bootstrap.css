@@ -3561,7 +3561,7 @@ tbody.collapse.in {
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #fff;
+  color: #ccc;
   text-decoration: none;
   background-color: #000;
 }
@@ -4275,8 +4275,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  height: 50px;
-  padding: 5px 15px;
+  width: 60px;
+  padding: 5px 5px;
   font-size: 18px;
   line-height: 20px;
 }

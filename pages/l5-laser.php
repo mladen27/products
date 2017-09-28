@@ -24,6 +24,11 @@
             </div>
             <div id="page-content-wrapper">
                 <div id="product-content" class="page-content">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/Website/pages/products.php">Proizvodi</a></li>
+                      <li class="breadcrumb-item"><a href="/Website/pages/product-group.php?group=height">Visinomeri</a></li>
+                      <li class="breadcrumb-item active">L5 - Laser</li>
+                    </ol>
                     <img src="/Website/img/products/l5-laser/L5_550x840.png">
 
                     <p>L5 Laser je instrument za premer visine, distance i nagiba. </p><br>

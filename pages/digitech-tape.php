@@ -24,6 +24,11 @@
             </div>
             <div id="page-content-wrapper">
                 <div id="product-content" class="page-content">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/Website/pages/products.php">Proizvodi</a></li>
+                      <li class="breadcrumb-item"><a href="/Website/pages/product-group.php?group=calipers">Prečnice</a></li>
+                      <li class="breadcrumb-item active">Digitalna traka</li>
+                    </ol>
                     <img src="/Website/img/products/digitech-tape/DigitechTape1550x840.png">
 
                     <p>Digitalna traka je dodatak za DP II prečnicu i koristi se za unapređeni premer dužine sortimenata u šumarstvu.</p><br>

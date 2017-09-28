@@ -5,7 +5,7 @@ html {
 
 body {
   width: 90%;
-  background-color: white;
+  background-color: #ffffff;
   min-height: 100vh;
 	margin: 0 auto;
 	padding: 0;
@@ -78,7 +78,7 @@ caption {
 }
 
 .carousel-caption h1{
-	font-size: 5em;
+	font-size: 4em;
 	padding-bottom: .2em;
 	color: #FECC00;
 	text-shadow: 3px 3px #000000;
@@ -86,7 +86,7 @@ caption {
 .carousel-caption h2{
 	text-shadow: 2px 2px #000000;
 	color: #FECC00;
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 .container.fit-container {
@@ -127,7 +127,7 @@ table.info td {
   flex: 1;
   margin-left: -250px;
   width: 250px;
-  background: #CCC;
+  background: #f5f5f5;
   position: relative;
   height: 100%;
   overflow-y: auto;
@@ -136,8 +136,9 @@ table.info td {
 }
 
 #page-content-wrapper {
-  flex: 5;
+  flex: 4;
   width: 100%;
+  padding: 23px;
 }
 
 .sidebar-nav {
@@ -186,7 +187,7 @@ table.info td {
   overflow: auto;
   font-size: 15px;
   font-weight: 200;
-  background-color: #1f2123;
+  background-color: #f5f5f5;
   border-color: #e7e7e7;
   height: 100%;
   color: #006AA7;
@@ -238,19 +239,18 @@ table.info td {
 }
 .nav-side-menu ul .sub-menu li.active a,
 .nav-side-menu li .sub-menu li.active a {
-  color: #fff;
+  color: #006AA7;
 }
 .nav-side-menu ul .sub-menu li,
 .nav-side-menu li .sub-menu li {
-  background-color: #006AA7;
+  background-color: #fff;
   border: none;
   line-height: 28px;
-  border-bottom: 1px solid #23282e;
   margin-left: 0px;
 }
 .nav-side-menu ul .sub-menu li:hover,
 .nav-side-menu li .sub-menu li:hover {
-  background-color: #006AA7;
+  background-color: #ccc;
 }
 .nav-side-menu ul .sub-menu li:before,
 .nav-side-menu li .sub-menu li:before {
@@ -260,19 +260,18 @@ table.info td {
   padding-left: 10px;
   padding-right: 10px;
   vertical-align: middle;
-  color: #fff;
+  color: #006AA7;
 }
 .nav-side-menu li {
   padding-left: 0px;
   border-left: 3px solid #2e353d;
-  border-bottom: 1px solid #23282e;
   color: #fff;
 }
 
 /* Meni stavka pre colapsa */
 .nav-side-menu li a {
   text-decoration: none;
-  color: #fff;
+  color: #006AA7;
 }
 .nav-side-menu ul .submenu li a {
   text-decoration: none;
@@ -286,7 +285,7 @@ table.info td {
 }
 .nav-side-menu li:hover {
   border-left: 3px solid #d19b3d;
-  background-color: #4f5b69;
+  background-color: #ccc;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -360,6 +359,10 @@ hr {
 	margin-right: 30px;
 }
 
+.page-content-header > hr {
+  margin-bottom: 0;
+}
+
 .page-content li {
   margin: 0 0 3px 0;
   padding: 0 0 3px 0;
@@ -367,7 +370,7 @@ hr {
 
 .spacer {
   width: 100%;
-  min-height: 60px;
+  min-height: 120px;
   margin-bottom: 0px;
 }
 
@@ -401,9 +404,6 @@ td {
   font-size: 14px;
 }
 
-.page-content-header {
-  padding: 15px 0 0 50px;
-}
 .navbar-inverse .navbar-nav > li.dropdown:hover > a, 
 .navbar-inverse .navbar-nav > li.dropdown:hover > a:hover,
 .navbar-inverse .navbar-nav > li.dropdown:hover > a:focus {
@@ -425,12 +425,12 @@ li.dropdown:hover > .dropdown-menu {
 
 .panel-inline {
   display: inline-block;
-  max-width: 290px;
-  margin: 35px;
+  width: 290px;
+  margin: 15px;
 }
 
 .product-table {
-  width: 85%;
+  width: 94%;
   margin: 0 auto;
 }
 
@@ -442,17 +442,20 @@ li.dropdown:hover > .dropdown-menu {
   height: 100%;
 }
 
-.home-wrapper {
+.featured-wrapper {
   width: 100%;
   margin-top: 30px;
 }
 
-.home-item {
-  display: inline-block;
-  background-color: blue;
+.featured-item {
+  display: table-cell;
+  vertical-align: top;
   width: 33%;
-  height: 100px;
-  padding: 10px;
+  padding: 15px 30px;
+}
+
+.featured-wrapper img {
+  width: 100%;
 }
 
 p {
@@ -463,4 +466,14 @@ p {
 #product-content {
   width: 85%;
   margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.table-wrapper {
+  display:flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }

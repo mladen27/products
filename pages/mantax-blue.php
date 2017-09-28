@@ -24,6 +24,11 @@
             </div>
             <div id="page-content-wrapper">
                 <div id="product-content" class="page-content">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/Website/pages/products.php">Proizvodi</a></li>
+                      <li class="breadcrumb-item"><a href="/Website/pages/product-group.php?group=calipers">Prečnice</a></li>
+                      <li class="breadcrumb-item active">Mantax Blue - Manuelna Prečnica</li>
+                    </ol>
                     <img src="/Website/img/products/mantax-blue/MantaxBlue550x840.png">
 
                     <p>Mantax blue je najpopularnija manuelna prečnica za rad u šumarstvu.</p><br>

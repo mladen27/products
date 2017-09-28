@@ -5,13 +5,13 @@
 		<script src = "../js/bootstrap.min.js"></script>
 		<meta charset = "utf-8">
 		<meta http-equiv="X-UA-Compatible" content = "IE = edge">
-		<title>Contact page</title>
 		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Oswald" type="text/css" rel="stylesheet">
 		<link rel="icon" type="image/png" href="/Website/img/Logo/logo-navbar.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="/Website/img/Logo/logo-navbar.png" sizes="16x16" />
+		<title>Kontakt</title>
 
 		<script>
 		    $(document).ready(function() {
@@ -64,7 +64,7 @@
         <!--<div class="spacer">
             &nbsp;
         </div>-->
-        <div style="text-align: center;"><h1>Kontaktirajte Nas</h1></div>
+        <div style="text-align: center;"><h1>Kontaktirajte nas</h1></div>
         <hr>
 		<div class="container body-container">
 			<div class = "row">
@@ -116,11 +116,29 @@
 							<span class="glyphicon glyphicon-envelope"></span><a href="mailto:godex@neobee.net"> godex@neobee.net</a> <br>
 						</address>
 					</form>
+					<div style="width: 440px; height: 340px;" id="map"></div>
 				</div>
 			</div>
 		</div>
 
+		<div class="spacer"></div>
 		<?php require_once("../templates/footer.php"); ?>
+
+	    <script>
+	      function initMap() {
+	        var uluru = {lat: 44.964302, lng: 19.622261};
+	        var map = new google.maps.Map(document.getElementById('map'), {
+	          zoom: 8,
+	          center: uluru
+	        });
+	        var marker = new google.maps.Marker({
+	          position: uluru,
+	          map: map
+	        });
+	      }
+	    </script>
+	    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEyEOQSHuJOXzx5u_VndH6CSoMWqNcuAk&callback=initMap">
+	    </script>
 
 
 	</body>

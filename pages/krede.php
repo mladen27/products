@@ -16,15 +16,20 @@
             &nbsp;
         </div>-->                    
         <div class="page-content-header">
-            <div style="text-align: center;"><h1>Krede</h1></div>
-        </div><hr>
+            <div style="text-align: center;"><h1>Krede</h1></div><hr>
+        </div>
         <div id="wrapper">
             <div id="sidebar-wrapper">
                 <?php require_once '../templates/sidebar.php'; ?>
             </div>
             <div id="page-content-wrapper">
                 <div id="product-content" class="page-content">
-                    <img src="/Website/img/products/krede/DP_DME_DPII550x840.png">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/Website/pages/products.php">Proizvodi</a></li>
+                      <li class="breadcrumb-item"><a href="/Website/pages/product-group.php?group=chalk">Krede</a></li>
+                      <li class="breadcrumb-item active">Krede</li>
+                    </ol>
+                    <img src="/Website/img/products/krede/foerster_03.jpg">
 
                     <p>U ponudi se nalaze visokokvalitetne šumske krede nemačkog proizvođača Bleispitz. Sve krede su testirane i proverene pre isporuke.</p><br>
 

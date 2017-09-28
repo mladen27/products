@@ -23,6 +23,11 @@
             </div>
             <div id="page-content-wrapper">
                 <div id="product-content" class="page-content">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/Website/pages/products.php">Proizvodi</a></li>
+                      <li class="breadcrumb-item"><a href="/Website/pages/product-group.php?group=calipers">Prečnice</a></li>
+                      <li class="breadcrumb-item active">MD II - Digitalna Prečnica</li>
+                    </ol>
                     <img src="/Website/img/products/md-ii/MDII_Iconer_1240x840.png">
 
                     <p>MD II je robusna i terenska Bluetooth prečnica dizajnirana za efikasan rad prikupljanja prečnika na terenu!</p><br>

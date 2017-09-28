@@ -23,6 +23,11 @@
             </div>
             <div id="page-content-wrapper">
                 <div id="product-content" class="page-content">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/Website/pages/products.php">Proizvodi</a></li>
+                      <li class="breadcrumb-item"><a href="/Website/pages/product-group.php?group=calipers">Prečnice</a></li>
+                      <li class="breadcrumb-item active">Radio Enter Button</li>
+                    </ol>
                     <img src="/Website/img/products/radio-button/RadioEnterButton1550x840.png">
 
                     <p>Potvrđivanje podataka na DP II kompjuterizovanoj prečnici je olakšano sa instaliranim Radio enter dugmerom na Smart skali.</p><br>

@@ -24,6 +24,12 @@
             </div>
             <div id="page-content-wrapper">
                 <div id="product-content" class="page-content">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/Website/pages/products.php">Proizvodi</a></li>
+                      <li class="breadcrumb-item"><a href="/Website/pages/product-group.php?group=survey">Svrdla</a></li>
+                      <li class="breadcrumb-item active">Čitač Godova</li>
+                    </ol>
+
                     <img src="/Website/img/products/citac-godova/TreeCoreReader1240x840.png">
 
                     <p>Čitač godova se upotrebljava za optičku analizu uzoraka drveta.</p><br>

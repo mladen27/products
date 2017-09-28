@@ -24,7 +24,12 @@
             </div>
             <div id="page-content-wrapper">
                 <div id="product-content" class="page-content">
-                    <img src="/Website/img/products/survey/DP_DME_DPII550x840.png">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/Website/pages/products.php">Proizvodi</a></li>
+                      <li class="breadcrumb-item"><a href="/Website/pages/product-group.php?group=chalk">Krede</a></li>
+                      <li class="breadcrumb-item active">Držač za krede</li>
+                    </ol>
+                    <img src="/Website/img/products/drzac-krede/kreidehalter_02.jpg">
 
                     <p>Držač krede pruža komforniji rad na terenu. Ruke i džepovi su čisti, kreda ne puca i bolje je iskorišćenje krede.</p><br>
 

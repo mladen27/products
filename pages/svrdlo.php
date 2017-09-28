@@ -24,6 +24,11 @@
             </div>
             <div id="page-content-wrapper">
                 <div id="product-content" class="page-content">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/Website/pages/products.php">Proizvodi</a></li>
+                      <li class="breadcrumb-item"><a href="/Website/pages/product-group.php?group=survey">Svrdla</a></li>
+                      <li class="breadcrumb-item active">Svrdlo</li>
+                    </ol>
                     <img src="/Website/img/products/svrdlo/Borer550x840.png">
 
                     <p>Haglof Sweden je najveći svetski proizvođač priraštajnih svrdla. Postoji široka paleta modela, dužina, prečnika svrdla i veličina.</p><br>

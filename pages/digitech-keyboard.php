@@ -23,6 +23,11 @@
             </div>
             <div id="page-content-wrapper">
                 <div id="product-content" class="page-content">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/Website/pages/products.php">Proizvodi</a></li>
+                      <li class="breadcrumb-item"><a href="/Website/pages/product-group.php?group=calipers">Prečnice</a></li>
+                      <li class="breadcrumb-item active">Digitalna Tastatura</li>
+                    </ol>
                     <img src="/Website/img/products/digitech-keyboard/DP_Keybord550x840.png">
 
                     <p>Koristeći Digitech tastaturu, unos različitih podataka u DP II kompjuterizovanu prečnicu će biti mnogo lakši.</p><br>

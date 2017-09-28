@@ -24,6 +24,11 @@
             </div>
             <div id="page-content-wrapper">
                 <div id="product-content" class="page-content">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/Website/pages/products.php">Proizvodi</a></li>
+                      <li class="breadcrumb-item"><a href="/Website/pages/product-group.php?group=height">Visinomeri</a></li>
+                      <li class="breadcrumb-item active">VL5 - Vertex Laser</li>
+                    </ol>
                     <img src="/Website/img/products/vertex-laser/VL5_550x840.png">
 
                     <p>VL5 Vertex Laser je vodeći instrument za efikasan premer visine, distance i nagiba. Odlični rezultati se dobijaju u svim okruženjima.</p><br>

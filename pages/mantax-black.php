@@ -24,6 +24,11 @@
             </div>
             <div id="page-content-wrapper">
                 <div id="product-content" class="page-content">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/Website/pages/products.php">Proizvodi</a></li>
+                      <li class="breadcrumb-item"><a href="/Website/pages/product-group.php?group=calipers">Prečnice</a></li>
+                      <li class="breadcrumb-item active">Mantax Black - Manuelna Prečnica</li>
+                    </ol>
                     <img src="/Website/img/products/mantax-black/MantaxBlack2550x840.png">
 
                     <p>Mantax black manuelna prečnica ima ergonomski dizajn i patent za sklapanje krakova.</p><br>

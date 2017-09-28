@@ -24,6 +24,11 @@
             </div>
             <div id="page-content-wrapper">
                 <div id="product-content" class="page-content">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/Website/pages/products.php">Proizvodi</a></li>
+                      <li class="breadcrumb-item"><a href="/Website/pages/product-group.php?group=calipers">Prečnice</a></li>
+                      <li class="breadcrumb-item active">DP II - Kompjuterska Prečnica</li>
+                    </ol>
                     <img src="/Website/img/products/dp-ii/DPII1240x840.png">
 
                     <p>DP II prečnica predstavlja vodeći instrument na šumarskom tržištu zahvaljujući prilagođenim programima i dodatnom opremom za sve zahteve tačnog premera prečnika u šumi!</p><br>
@@ -58,7 +63,7 @@
 
                     <h2>Radio Enter dugme</h2>
                     <img src="/Website/img/products/dp-ii/RadioEnterButtonDPII550x840">
-                    <p>Potvrđivanje podataka na DP II kompjuterizovanoj prečnici je olakšano sa instaliranim Radio enter dugmerom na Smart skali.</p><br>Digitech tastatura
+                    <p>Potvrđivanje podataka na DP II kompjuterizovanoj prečnici je olakšano sa instaliranim Radio enter dugmerom na Smart skali.</p><br>
 
                     <h2>Digitech tastatura</h2>
                     <img src="/Website/img/products/dp-ii/DPKeybord550x840">

@@ -17,11 +17,6 @@
             &nbsp;
         </div>-->
                 <div id="theCarousel" class="carousel slide custom-carousel" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#theCarousel" data-slide-to="0" class="active"> </li >
-                            <li data-target="#theCarousel" data-slide-to="1"> </li>
-                            <li data-target ="#theCarousel" data-slide-to="2"> </li>
-                        </ol >
 
                         <div class="carousel-inner">
                             <div class="item active" >
@@ -31,16 +26,38 @@
                             </div>      
                         </div>
                     </div>
-                    <div style="text-align: center;"><h1>Proizvodi</h1></div><hr>
+
+
+
+                    <!--Search bar za proizvode
+                    <form method="get" action="product-group.php" class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input id="key-work" type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Pretraži</button>
+                    </form>-->
+
+
+                    <?php
+                        $group_name = null;
+                        if(isset($_GET['group'])) {
+                            $group = $_GET['group'];
+                            require_once '..\php\connect.php';
+                            $query = "SELECT naziv FROM kategorija WHERE alias = '".$group."';";
+
+                            if($query_run = mysqli_query($link, $query)){
+                                if($row = mysqli_fetch_assoc($query_run)){
+                                    $group_name = $row['naziv'];
+                                }
+                            }
+                        }
+
+                    ?>
+
+                    <div style="text-align: center;"><h1><?php if($group_name != null) echo $group_name; else echo "Proizvodi"; ?></h1></div><hr>
                         <div class="product-table">
                             <?php
                                 if(isset($_GET['group'])){
-                                    require_once '..\php\connect.php';
-                                    $group = $_GET['group'];
-
-
-
-
 
                                     if(isset($_GET['key-word'])){ 
                                         mysql_query("SELECT * FROM proizvod
@@ -52,6 +69,8 @@
                                             $query = "SELECT p.id as pId, p.ime, p.kraciopis, p.palias, k.naziv, k.alias FROM proizvod p INNER JOIN kategorija k ON p.kategorija = k.id WHERE k.alias = '".$group."';";
                                         }
                                     }
+
+                                    echo "<div class='table-wrapper'>";
 
                                     if($query_run = mysqli_query($link, $query)){
                                         //echo "<table border=1 frame=void rules=rows style = 'width: 100%'>";
@@ -65,7 +84,7 @@
                                             echo "</div>";
                                         }
 
-                                        //echo "</table>";
+                                        echo "</div>";
                                     } else {
                                         echo mysqli_error($link);
                                     }
@@ -75,6 +94,7 @@
                             ?>
                         </div>
 
+        <div class="spacer"></div>
         <?php require_once("../templates/footer.php"); ?>
 
 
